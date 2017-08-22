@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  day_of_week: MyString
+  time: 2017-08-22 17:46:49
+  price: 1
+  dealcode: MyString
+
+two:
+  day_of_week: MyString
+  time: 2017-08-22 17:46:49
+  price: 1
+  dealcode: MyString
