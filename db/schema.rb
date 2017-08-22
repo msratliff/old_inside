@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170822214649) do
+ActiveRecord::Schema.define(version: 20170822220341) do
 
   create_table "promotions", force: :cascade do |t|
     t.string "day_of_week"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20170822214649) do
     t.string "dealcode"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "venue_id"
+    t.index ["venue_id"], name: "index_promotions_on_venue_id"
   end
 
   create_table "users", force: :cascade do |t|
