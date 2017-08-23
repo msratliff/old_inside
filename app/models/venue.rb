@@ -1,5 +1,5 @@
 class Venue < ApplicationRecord
-  has_many :users
+  has_many :promotions, dependent: :destroy
 
   geocoded_by :address
   after_validation :geocode, if: ->(obj){ obj.city.present? and obj.city_changed? }
